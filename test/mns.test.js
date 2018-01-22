@@ -17,7 +17,9 @@ describe('test/mns.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, mns')
+      .expect((res)=> {
+        console.log(res.body.Message);
+      })
       .expect(200);
   });
 });

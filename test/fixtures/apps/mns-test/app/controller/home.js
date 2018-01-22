@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, ' + this.app.plugins.mns.name;
+    this.ctx.body = await this.ctx.mns.mq.get('xticket').sendP('how');
   }
 }
 
