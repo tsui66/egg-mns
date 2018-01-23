@@ -1,6 +1,6 @@
 {
   "name": "egg-mns",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "aliyun mns plugin for egg",
   "eggPlugin": {
     "name": "mns"
@@ -40,7 +40,9 @@
   "files": [
     "app.js",
     "agent.js",
-    "config"
+    "config",
+    "lib",
+    "app"
   ],
   "ci": {
     "version": "8, 9"
