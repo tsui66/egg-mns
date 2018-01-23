@@ -10,7 +10,7 @@ module.exports = appInfo => {
       aliyunAccountId: process.env.aliyunAccountId || "your-account-id",
       aliyunKey: process.env.aliyunKey || "your-key-id",
       aliyunSecret: process.env.aliyunSecret || "your-key-secret",
-      region: process.env.TRAVIS == "true" ? new AliMNS.Region(AliMNS.City.SiliconValley): new AliMNS.Region(AliMNS.City.Hangzhou),
+      region: process.env.region || 'hangzhou',
     },
     mqNames: process.env.aliyunMqName || [],
     GA: true, // enable google analytics data collection
