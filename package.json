@@ -1,6 +1,6 @@
 {
   "name": "egg-mns",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "aliyun mns plugin for egg",
   "eggPlugin": {
     "name": "mns"
