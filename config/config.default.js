@@ -12,6 +12,7 @@ module.exports = appInfo => {
       aliyunSecret: process.env.aliyunSecret || "your-key-secret",
       region: process.env.region || 'hangzhou',
     },
+    waitSeconds: 5, // s
     mqNames: process.env.aliyunMqName || [],
     GA: true, // enable google analytics data collection
     https: false, // using http or https protocol, default is false for using http protocol.
